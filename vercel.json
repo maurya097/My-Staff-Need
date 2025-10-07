@@ -1,0 +1,79 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/home",
+      "destination": "/home/index.html"
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about-us/index.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/index.html"
+    },
+    {
+      "source": "/apply-now",
+      "destination": "/apply-now/index.html"
+    },
+    {
+      "source": "/benefits",
+      "destination": "/benefits/index.html"
+    },
+    {
+      "source": "/healthcare-careers",
+      "destination": "/healthcare-careers/index.html"
+    },
+    {
+      "source": "/locum-tenens",
+      "destination": "/locum-tenens/index.html"
+    },
+    {
+      "source": "/per-diem",
+      "destination": "/per-diem/index.html"
+    },
+    {
+      "source": "/travel-nursing",
+      "destination": "/travel-nursing/index.html"
+    },
+    {
+      "source": "/workforce-solutions-partner",
+      "destination": "/workforce-solutions-partner/index.html"
+    },
+    {
+      "source": "/refer-a-friend-program",
+      "destination": "/refer-a-friend-program/index.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy/index.html"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms-of-service/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+} 
